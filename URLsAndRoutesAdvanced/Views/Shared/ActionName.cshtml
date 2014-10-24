@@ -1,0 +1,25 @@
+﻿@{
+    Layout = null;
+}
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ActionName</title>
+</head>
+<body>
+    <div>The controller is : @ViewBag.Controller</div>
+    <div>The action is : @ViewBag.Action</div>
+    <div>The parameter is : @ViewBag.ID</div>
+    <div>
+        @Html.ActionLink("This is an outgoing URL", "CustomVariable", new {id = "Hello"})
+    </div>
+    <div>
+        @Html.ActionLink("This targets another controller","Index","Admin")
+    </div>
+    <div>
+        @Html.ActionLink("This targets another controller", "Index", "Customer")
+    </div>
+</body>
+</html>
+
